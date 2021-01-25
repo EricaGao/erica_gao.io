@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<button onclick="topFunction()" id="myBtn">Top</button>
+	<div id="website">
+		<div id="header">
+			<div class="branding">
+				<img id="logo" src=images/logo.png>
+				<p>UX/UI | Web Designer</p>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">About</a></li>
+					<li><a href="portfolio.html" class="active">Portfolio</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+
+
+
+		<div id="heroImage">
+
+			<img src="images/WeatherBug_Mockup_Page.jpg" style="background-color:#dde1e6; margin: 0 auto; display: block; width: 60%;">
+
+		</div>
+
+
+		<div id="content">
+			<div class="weatherBug">
+				<h2 style="padding-bottom: 20px;">WeatherBug Redesign Project</h2>
+
+				<section id="about">
+					<div class="description">
+						<p><span style="font-size: 14px; font-weight: 600; color: #848484;">Overview</span><br>This is a redesign project for <span style="font-style: italic;">WeatherBug</span>, an app that tracks weather conditions from point A to point B, and allows people to share their local weather with friends.</p>
+
+					</div>
+
+					<div class="description">
+
+						<p><span style="font-size: 14px; font-weight: 600; color: #848484;">Role</span><br>Individual Project (Experience Design & Visual Design)</p>
+
+						<p><span style="font-size: 14px; font-weight: 600; color: #848484;">Tools & Method</span><br>InVision Studio, Figma, Adobe Illustrator</p>
+
+						<p><span style="font-size: 14px; font-weight: 600; color: #848484;">Duration</span><br>Oct - Dec 2020</p>
+					</div>
+				</section>	
+
+			<h2 style="padding-top: 20px;"><span style="font-size: 16px; font-weight: 600; color: #ea4b3c; letter-spacing: 0.5px">RESEARCH</span><br>01. Heuristic Evaluation</h2>
+
+			<div style="display: flex; margin-left: 320px;">
+				<img style="width: 11%; height: 11%; border-radius: 10px; box-shadow: 5px 5px 5px #dadada;" src="images/icon.png">
+				<div style="display: block; margin-left: 20px; margin-top: -15px;">
+					<p>WeatherBug</p>
+					<p style="font-size: 14px; font-weight: 600; color: #848484; width: 200px; margin-top: -15px; padding-bottom: 20px;">Current Version</p>
+				</div>	
+			</div>
+
+
+			<div class="heuristicEvaluation">
+				<img src="images/evaluation1.png">
+				<img src="images/evaluation2.png">
+				<img src="images/evaluation3.png">
+		
+			</div>
+
+			<p style="padding-top: 20px;"><span style="font-size: 14px; font-weight: 600; color: #848484;">Personal Experience</span><br>At the beginning of this project, our instructor asked us to evaluate this app as a user. I encountered three pain points that I had when I tried to use the app:</p>
+
+			<ul>
+				<li style="color: #848484; font-weight: 400; font-size: 14.5px;">Weather updates are all over the place and there is too much information on homepage.</li>
+				<li style="color: #848484; font-weight: 400; font-size: 14.5px;">Random feed of advertising in the middle of the page makes users frustrated</li>
+				<li style="color: #848484; font-weight: 400; font-size: 14.5px;">The functions of the map page and the icons in the navigation bar are unclear.</li>
+			</ul>
+
+
+
+			<section class="show_hide">		
+				
+				<p>&quot;Current WeatherBug app design doesn’t portrait <span class="highlight">a feeling or connection </span>with users. Seems like weather reports with random news and advertising.&quot;</p>
+			</section>
+
+			<div class="redesignGoals">
+				<h2 style="padding-top: 20px;">02. Redesign Goals</h2>	
+
+				<ol>
+  					<li style="color: #444444; font-weight: 400; font-size: 14px;"><span style="font-weight: 600; font-size: 18px;">Make visual design more aesthetic and engaging</span><br>Use color palette to measure temperature and icons for weather status: cloudy, rainy, sunny etc.</li>
+  					<li style="color: #444444; font-weight: 400; font-size: 14px;"><span style="font-weight: 600; font-size: 18px;">Add a feature to track weather conditions from point A to point B</span><br>Travelers can use WeatherBug to explore weather conditions along their trip.</li>
+  					<li style="color: #444444; font-weight: 400; font-size: 14px;"><span style="font-weight: 600; font-size: 18px;">Allow sharing local weather via friends and communities</span><br>Add a camera button to allow users of different locations to take picture of local weather and share with the community.</li>
+				</ol>
+				
+			</div> 
+
+			
+			<!-- <h2 style="padding-top: 20px;">03. Competitors</h2>	
+			<div class="competitors">
+				<div class="group">
+					<img style="border-radius: 20px;" src="images/weather_channel.png">
+					<p style="color: #565656;"><span style="color: black; font-weight: 600;">The Weather Channel</span> provides national and local weather forecast with daily alerts, allergy, health and outdoor conditions.</p>
+					<a href="https://weather.com/">link to website</a>
+					<p style="color: #565656; font-style: italic;">App Store Review: 4.7/5</p>
+
+				</div>
+
+				<div class="group">
+					<img style="border-radius: 20px;" src="images/accuweather.jpg">
+					<p style="color: #565656;"><span style="color: black; font-weight: 600;">AccuWeather</span> provides in-depth forecasts, hurricane alerts with supreme accuracy. MinuteCast with 2-hour details.</p>
+					<a href="https://www.accuweather.com/">link to website</a>
+					<p style="color: #565656; font-style: italic;">App Store Review: 4.6/5</p>
+				</div>
+
+				<div class="group">
+					<img style="border-radius: 20px;" src="images/NOAA.jpg">
+					<p style="color: #565656;"><span style="color: black; font-weight: 600;">NOAA Weather Radar Live</span> shows the areas of rain, snow & mixed precipitation on the interactive map.</p>
+					<a href="https://apps.apple.com/us/app/noaa-weather-radar-live/id749133753">link to website</a>
+					<p style="color: #565656; font-style: italic;">App Store Review: 4.4/5</p>
+				</div>
+				
+			</div>
+ -->
+			<h2 style="padding-top: 20px;">03. Audience Research</h2>	
+
+			<div class="weatherbug_images">
+				<img class="class1" src="images/weatherbug1.png">
+				<img class="class2" src="images/weatherbug2.png">
+				<img class="class3" src="images/weatherbug3.png">
+				<p style="margin-top: -20px; size: 12px; font-style: italic;">Source from WeatherBug.com on <a style="color: #ff907d;" href="https://www.similarweb.com/website/weatherbug.com/">Similarweb</a></p>
+			</div>
+
+			<div class="audienceResearch">
+				
+				<div style="border-right: 1px solid #dadada;" class="demographic">
+					<p style="font-weight: 600; font-size: 18px;">Gender Demographic</p>
+					<p style="color: #848484; font-weight: 400; font-size: 14.5px;">Both genders use WeatherBug, but with slightly more men.</p>
+				</div>
+
+				<div style="border-right: 1px solid #dadada; padding-right: 30px;" class="demographic">
+					<p style="font-weight: 600; font-size: 18px;">Income Demographic</p>
+					<p style="color: #848484; font-weight: 400; font-size: 14.5px;">Accuweather, WeatherBug biggest competitor, has 30% users with $25k-$59,999k income. Presumably, WeatherBug user income demographic is middle class. <br><span style="font-style: italic;">* In America, that is $40,500 to $122,000</span></p>
+				</div>
+
+				<div class="demographic">
+					<p style="font-weight: 600; font-size: 18px;">Geographic Demographic</p>
+					<p style="color: #848484; font-weight: 400; font-size: 14.5px;">Most WeatherBug users are located in the US.</p>
+				</div>
+			</div>
+
+
+
+
+			<h2 style="padding-top: 30px;">04. App Store Reviews</h2>
+			<div class="reviews">
+				<div style="display: block; margin-top: 90px;">
+					<p style="font-size: 14px; font-weight: 600;"><span style="color: #848484; font-weight: 400;">Updates are </span>delayed & inaccurate</p>
+					<img src="images/review1.png">
+					<img src="images/review4.png">
+				</div>
+
+				<div style="display: block;">
+					<p style="font-size: 14px; font-weight: 600;"><span style="color: #848484; font-weight: 400;">Map layer icons and alerts are </span>confusing</p>
+					<img src="images/review2.png">
+					<img src="images/review5.png">
+				</div>
+
+				<div style="display: block;">
+					<p style="font-size: 14px; font-weight: 600;"><span style="color: #848484; font-weight: 400;">Visual design is </span>packed</p>
+					<img src="images/review3.png">
+					<img src="images/review6.png">
+				</div>
+
+			</div>
+			<p style="padding-top: 20px;"><span style="font-size: 14px; font-weight: 600; color: #848484;">Summary</span><br>The majority of negative reviews have been about: </p>
+
+			<ul>
+				<li>Delayed and inaccurate weather updates.</li>
+				<li>Some users are concerned about privacy issues.</li>
+				<li>Warnings are too dramatic and scary.</li>
+				<li>Visual design is packed and it's easy to go to the wrong page.</li>
+				<li>Advertising information is overwhelming.</li>
+			</ul>
+
+			<h2 style="padding-top: 30px;">05. Target Audience Statement</h2>
+
+
+			<section class="show_hide">		
+				
+				<p style="font-size: 20px; color: #848484; font-weight: 400;">WeatherBug target audience are between age 25-54, more men than women, residing in the US, who earn $60,000/year, interested in news and media, arts and entertainment TV streaming.</p>
+
+			</section>
+
+
+			<h2 style="padding-top: 40px;"><span style="font-size: 16px; font-weight: 600; color: #ea4b3c; letter-spacing: 0.5px">DESIGN</span><br>01. Personas & User Stories</h2>
+
+			<div id="wrapper">
+
+				<div id="main">
+					<div id="slideshow-frame">
+						<div class="slideshow-images">
+							<img src="images/persona1.png">
+							<img src="images/userStory1.png">
+							<img src="images/persona2.png">
+							<img src="images/userStory2.png">
+					
+
+						</div>
+						<div class="arrow-next"></div>
+						<div class="arrow-prev"></div>
+
+					</div>
+
+				</div>
+			</div>
+			
+
+
+			<div class="userFlows">
+				<h2 style="padding-top: 20px;">02. User Flows</h2>
+
+				<p>These are three outcomes that users hope to achieve through interacting with WeatherBug. I'm using David's user story as the context. </p>	
+
+
+				<ul class="tabs">
+					<li class="active">Task 1</li>
+					<li>Task 2</li>
+					<li>Task 3</li>
+				</ul>
+
+				<div id="tasks">
+					<article>
+						<p style="font-size: 14px; font-weight: 600; color: #ea4b3c; padding-top: 22px;">David wants to add Half Moon Bay to his location list and check its weather for today and the upcoming week.</p>
+						<div id="flowboxes">
+							<div class="flowbox"><p style="font-size: 12px; color: #565656; line-height: 20px; padding: 0 15px;">Select the app from your phone’s home screen</p></div>
+							<div><p class="arrow">&rarr;</p></div>
+							<div class="flowbox"><p style="font-size: 12px; color: #565656; line-height: 20px; padding: 0 15px;">Tab the “plus” icon at the bottom center</p></div>
+							<div><p class="arrow">&rarr;</p></div>
+							<div class="flowbox"><p style="font-size: 12px; color: #565656; line-height: 20px; padding: 0 15px;">Enter city name: Half Moon Bay, CA</p></div>
+							<div><p class="arrow">&rarr;</p></div>
+							<div class="flowbox"><p style="font-size: 12px; color: #565656; line-height: 20px; padding: 0 15px;">Tab “Half Moon Bay”</p></div>
+							<div><p class="arrow">&rarr;</p></div>
+							<div class="flowbox"><p style="font-size: 12px; color: #565656; line-height: 20px; padding: 0 15px;">Click “Today’s Details”</p></div>
+							<div><p class="arrow">&rarr;</p></div>
+							<div class="flowbox"><p style="font-size: 12px; color: #565656; line-height: 20px; padding: 0 15px;">Check today’s weather info and tap “Wed” for tomorrow</p></div>
+							<div><p class="arrow">&rarr;</p></div>
+							<div class="flowbox"><p style="font-size: 12px; color: #565656; line-height: 20px; padding: 0 15px;">Weather forecast for the upcoming week is now accessible</p></div>
+						</div>
+					</article>
+
+					<article>
+						<p style="font-size: 14px; font-weight: 600; color: #ea4b3c; padding-top: 22px;">David wants to explore weather situation from San Francisco to Half Moon Bay.</p>
+						<div id="flowboxes">
+							<div class="flowbox"><p style="font-size: 12px; color: #565656; line-height: 20px; padding: 0 15px;">Go to “Explore” page</p></div>
+							<div><p class="arrow">&rarr;</p></div>
+							<div class="flowbox"><p style="font-size: 12px; color: #565656; line-height: 20px; padding: 0 15px;">Tab “Search here”</p></div>
+							<div><p class="arrow">&rarr;</p></div>
+							<div class="flowbox"><p style="font-size: 12px; color: #565656; line-height: 20px; padding: 0 15px;">Choose “Half Moon Bay, CA”</p></div>
+							<div><p class="arrow">&rarr;</p></div>
+							<div class="flowbox"><p style="font-size: 12px; color: #565656; line-height: 20px; padding: 0 15px;">Tab “Search” button</p></div>
+							<div><p class="arrow">&rarr;</p></div>
+							<div class="flowbox"><p style="font-size: 12px; color: #565656; line-height: 20px; padding: 0 15px;">Switch to “Precipitation”</p></div>
+							<div><p class="arrow">&rarr;</p></div>
+							<div class="flowbox"><p style="font-size: 12px; color: #565656; line-height: 20px; padding: 0 15px;">Switch to “Air Quality” </p></div>
+							<div><p class="arrow">&rarr;</p></div>
+							<div class="flowbox"><p style="font-size: 12px; color: #565656; line-height: 20px; padding: 0 15px;">David now knows the weather situation on the way from SF to HMB</p></div>
+						</div>
+					</article>
+
+
+					<article>
+						<p style="font-size: 14px; font-weight: 600; color: #ea4b3c; padding-top: 22px;">David wants to share the weather at my current location with Alex by taking a picture.</p>
+						<div id="flowboxes">
+							<div class="flowbox"><p style="font-size: 12px; color: #565656; line-height: 20px; padding: 0 15px;">Click camera icon at the bottom of the homepage</p></div>
+							<div><p class="arrow">&rarr;</p></div>
+							<div class="flowbox"><p style="font-size: 12px; color: #565656; line-height: 20px; padding: 0 15px;">Take a picture by pressing the circle at the bottom center</p></div>
+							<div><p class="arrow">&rarr;</p></div>
+							<div class="flowbox"><p style="font-size: 12px; color: #565656; line-height: 20px; padding: 0 15px;">Tab “share” button on the up right corner</p></div>
+							<div><p class="arrow">&rarr;</p></div>
+							<div class="flowbox"><p style="font-size: 12px; color: #565656; line-height: 20px; padding: 0 15px;">Choose “Alex J” profile with text message icon</p></div>
+							<div><p class="arrow">&rarr;</p></div>
+							<div class="flowbox"><p style="font-size: 12px; color: #565656; line-height: 20px; padding: 0 15px;">Send the picture with caption</p></div>
+							<div><p class="arrow">&rarr;</p></div>
+							<div class="flowbox"><p style="font-size: 12px; color: #565656; line-height: 20px; padding: 0 15px;">Receive “message sent” confirmation pop up</p></div>
+						
+						</div>
+					</article>
+			</div>
+
+			<div class="midFidelity">
+				<h2 style="padding-top: 20px;">03. Mid-fidelity Prototype</h2>	
+
+				
+
+				<div id="wrapper">
+					<div class="prototype-slideshow-captions-all">
+						<div class="prototype-slideshow-caption">
+							<p style="font-size: 14px; font-weight: 600; color: #848484;">User Flow 1</p>
+
+						</div>
+						<div class="prototype-slideshow-caption">
+							<p style="font-size: 14px; font-weight: 600; color: #848484;">User Flow 2</p>
+						</div>
+						<div class="prototype-slide-show-caption">
+							<p style="font-size: 14px; font-weight: 600; color: #848484;">User Flow 3</p>
+					
+						</div>
+				
+					</div>
+
+
+					<div id="main">
+						<div id="prototype-slideshow-frame">
+							<div class="prototype-slideshow-images">
+								<img src="images/mid_fid_prototype_flow1.png">
+								<img src="images/mid_fid_prototype_flow2.png">
+								<img src="images/mid_fid_prototype_flow3.png">
+					
+
+							</div>
+							<div class="prototype-arrow-next"></div>
+							<div class="prototype-arrow-prev"></div>
+
+						</div>
+
+					</div>
+				</div>
+				
+			</div> 
+
+			<h2 style="padding-top: 40px;"><span style="font-size: 16px; font-weight: 600; color: #ea4b3c; letter-spacing: 0.5px">TESTING</span><br>01. Usability Testing</h2>
+
+			<div id="usabilityTesting">
+				<div id="testingDetails">
+					<div>
+						<img src="images/testing1.jpg">
+						<p style="font-size: 14px; font-weight: 500; color: #848484; line-height: 20px;"><span style="font-size: 14px; font-weight: 600; color: black;">Date: </span>November 16th, 2020<br><span style="font-size: 14px; font-weight: 600; color: black;">Moderator: </span>Cindy Chan<br><span style="font-size: 14px; font-weight: 600; color: black;">Tester: </span>Xinyue Li</p>
+					</div>
+					<div>
+						<img src="images/testing2.jpg">
+						<p style="font-size: 14px; font-weight: 500; color: #848484; line-height: 20px;"><span style="font-size: 14px; font-weight: 600; color: black;">Date: </span>November 19th, 2020<br><span style="font-size: 14px; font-weight: 600; color: black;">Moderator: </span>Cindy Chan<br><span style="font-size: 14px; font-weight: 600; color: black;">Tester: </span>Mia Jin</p>
+					</div>
+					<div>
+						<img src="images/testing3.jpg">
+						<p style="font-size: 14px; font-weight: 500; color: #848484; line-height: 20px;"><span style="font-size: 14px; font-weight: 600; color: black;">Date: </span>November 19th, 2020<br><span style="font-size: 14px; font-weight: 600; color: black;">Moderator: </span>Mia Jin<br><span style="font-size: 14px; font-weight: 600; color: black;">Tester: </span>Cindy Chan</p>
+					</div>
+
+				</div>
+
+				<div id="keyConclusions">
+
+					<p style="font-weight: 600;">Key Conclusions</p>
+					<p style="font-size: 14px; font-weight: 600; color: #848484;">Task 1</p>
+					<ul>
+						<li>1-5 Tomorrow and future weather details tab is hard to slide up in prototype. </li>
+						<li>1-5 “Today's Details” icon needs to be bigger so it’s easier to spot. </li>
+						<li>1-6 Air quality can also use an icon bar to present air quality. </li>
+						
+			
+					</ul>
+
+					<p style="font-size: 14px; font-weight: 600; color: #848484;">Task 2</p>
+					<ul>
+						<li>2-2 The current location button is pointing down, maybe you can adjust it a little bit, like pointing up. </li>
+						<li>2-3 I feel it could be better for users to understand the function by labeling this page(ex.search a new location weather)something like that. </li>
+						<li>2-4 Maybe the map could be more zoomed in!</li>
+					</ul>
+
+					<p style="font-size: 14px; font-weight: 600; color: #848484;">Task 3</p>
+					<ul>
+						<li>3-2 Can experiment with giving a little hint when a picture is taken. </li>
+						<li>3-3 Maybe try adding filters or captions.</li>
+
+					</ul>
+
+				</div>
+			</div>
+
+			<div id="ABTesting">
+				<h2 style="padding-top: 30px;">02. A/B Testing</h2>	
+				<p style="font-size: 14px; font-weight: 600; color: #848484;">Test 1</p>
+				<div class="testing">
+					<div class="testingPart">
+						<img src="images/ABTesting1.png">
+						<p style="font-size: 14px; font-weight: 600; margin-top: 0px;"><span style="color: #848484; font-weight: 400;">Google Form </span>navigation menu</p>
+					</div>
+
+					<div class="testingPart">
+						<img src="images/testingResult1.png">
+						<p style="font-size: 14px; font-weight: 600; margin-top: 0px; white-space: pre;"><span style="color: #848484; font-weight: 400;">Test 1 </span>response page                            <a href="https://forms.gle/FcaLiQVkLagHWMNX8">Link to test form</a></p>
+
+					</div>
+				</div>
+
+				<div id="test1Feedback">
+					<div class="feedback">
+						<p style="font-weight: 600;">Feedback</p>
+						<ul>
+							<li>"Since for the majority of time I would check the weather of the location I'm in, Version B makes more sense."</li>
+							<li>"Version B has more details than version A. I'm very happy to directly see the temperature change in the next few hours."</li>
+							<li>"Version B gives more information and provides a nice overview of relevant content for the user."</li>
+						</ul> 
+					</div>
+
+					<div class="suggestions">
+						<p style="font-weight: 600;">Suggestions</p>
+						<ul>
+							<li>"I feel like most of the details are very small. You could bump up the font a couple of sizes."</li>
+							<li>"For me, it is a little confused what page I am looking at, maybe you can highlight the home icon."</li>
+							<li>"If this is what we see on the first page, I think we need a tab that will lead to other locations."</li>
+							
+						</ul>
+
+					</div>
+				</div>
+
+				<p style="font-size: 14px; font-weight: 600; color: #848484;">Test 2</p>
+				<div class="testing">
+					<div class="testingPart">
+						<img src="images/ABTesting2.png">
+						<p style="font-size: 14px; font-weight: 600; margin-top: 0px;"><span style="color: #848484; font-weight: 400;">Google Form </span>navigation menu</p>
+					</div>
+
+					<div class="testingPart">
+						<img src="images/testingResult2.png">
+						<p style="font-size: 14px; font-weight: 600; margin-top: 0px; white-space: pre;"><span style="color: #848484; font-weight: 400;">Test 2 </span>response page                            <a href="https://forms.gle/y4Fs4eabE1rGxHqZA">Link to test form</a></p>
+
+					</div>
+				</div>
+
+				<div id="test2Feedback">
+					<div class="feedback">
+						<p style="font-weight: 600;">Feedback</p>
+						<ul>
+							<li>"Too much text in option A, I doubt anyone will read it on a daily basis."</li>
+							<li>"Graphics help to organize the information."</li>
+							<li>"Version B with more icons can let me get the information more quickly."</li>
+						</ul> 
+					</div>
+
+					<div class="suggestions">
+						<p style="font-weight: 600;">Suggestions</p>
+						<ul>
+							<li>"Temperature section on the bottom is better have some rough labeling."</li>
+							<li>"Air quality section could also use an icon bar to represent air quality."</li>
+							
+							
+						</ul>
+
+					</div>
+				</div>
+
+
+				<p style="font-size: 14px; font-weight: 600; color: #848484;">Test 3</p>
+				<div class="testing">
+					<div class="testingPart">
+						<img src="images/ABTesting3.png">
+						<p style="font-size: 14px; font-weight: 600; margin-top: 0px;"><span style="color: #848484; font-weight: 400;">Google Form </span>navigation menu</p>
+					</div>
+
+					<div class="testingPart">
+						<img src="images/testingResult3.png">
+						<p style="font-size: 14px; font-weight: 600; margin-top: 0px; white-space: pre;"><span style="color: #848484; font-weight: 400;">Test 3 </span>response page                            <a href="https://forms.gle/6V7BSQAPrLoNgUf5A">Link to test form</a></p>
+
+					</div>
+				</div>
+
+				<div id="test3Feedback">
+					<div class="feedback">
+						<p style="font-weight: 600;">Feedback</p>
+						<ul>
+							<li>"In version A, it is clear that button means search, but in Version B, the arrow is not clear to me."</li>
+							<li>"I don’t think the arrow is needed."</li>
+							<li>"Version A is more clear and the position of the search icon is better than Version B."</li>
+						</ul> 
+					</div>
+
+					<div class="suggestions">
+						<p style="font-weight: 600;">Suggestions</p>
+						<ul>
+							<li>"I'm not sure with version B as well, maybe you can explore more options?"</li>
+							<li>"If you need more space to add information, you can create a new screen or pop-up screen."</li>
+							
+							
+						</ul>
+
+					</div>
+				</div>
+
+			</div> 
+
+			<div id="TestingChanges">
+				<h2 style="padding-top: 30px;">03. Usability Testing Changes</h2>	
+
+				<div class="change">
+					<div class="changeDescription1">
+						<hr style="width: 15%; border-top: 2px solid #ea4b3c; text-align: left; margin-left: 0;">
+						<p style="font-weight: 600; margin-top: 0;">Homepage</p>
+
+						<ul>
+							<li style="color: #848484; font-weight: 400; font-size: 14px;">Set current location weather details page to be <span style="font-weight: 600; color: #444444;">homepage</span>.</li>
+							<li style="color: #848484; font-weight: 400; font-size: 14px;">Added a <span style="font-weight: 600; color: #444444;">drop-down menu</span> to switch between locations.</li>
+							<li style="color: #848484; font-weight: 400; font-size: 14px;">Put a plus button at the top to be able to <span style="font-weight: 600; color: #444444;">add new locations</span>.</li>
+							<li style="color: #848484; font-weight: 400; font-size: 14px;">Made <span style="font-weight: 600; color: #444444;">future dates in a horizontal bar of tabs</span> so that current day weather details can be shown. </li>
+							
+						</ul>
+					</div>
+
+					<div class="BeforeAndAfter">
+						<img src="images/BeforeAndAfter1.png">
+					</div>
+
+				</div>
+
+				<div class="change">
+
+
+					<div class="changeDescription2">
+						<hr style="width: 15%; border-top: 2px solid #ea4b3c; text-align: left; margin-left: 0;">
+						<p style="font-weight: 600; margin-top: 0;">Weather Details Page</p>
+
+						<ul>
+							<li style="color: #848484; font-weight: 400; font-size: 14px;">Replaced <span style="font-weight: 600; color: #444444;">weather description</span> with all icons and texts. </li>
+							<li style="color: #848484; font-weight: 400; font-size: 14px;">Added <span style="font-weight: 600; color: #444444;">indications and measurements</span> of temperature fluctuations.</li>
+							<li style="color: #848484; font-weight: 400; font-size: 14px;">Added <span style="font-weight: 600; color: #444444;">°C/°F conversion.</span></li>
+							<li style="color: #848484; font-weight: 400; font-size: 14px;"><span style="font-weight: 600; color: #444444;">Highlighted Home tab </span>to indicate current page. </li>
+							
+						</ul>
+					</div>
+
+					<div class="BeforeAndAfter">
+						<img src="images/BeforeAndAfter2.png">
+					</div>
+
+				</div>
+
+				<div class="change">
+					<div class="changeDescription3">
+						<hr style="width: 15%; border-top: 2px solid #ea4b3c; text-align: left; margin-left: 0;">
+						<p style="font-weight: 600; margin-top: 0;">Explore Page</p>
+
+						<ul>
+							<li style="color: #848484; font-weight: 400; font-size: 14px;">Added <span style="font-weight: 600; color: #444444;">visual hierarchy </span>on the navigation bar.</li>
+							<li style="color: #848484; font-weight: 400; font-size: 14px;">Made <span style="font-weight: 600; color: #444444;">search result </span>available directly after user input.</li>
+
+							<li style="color: #848484; font-weight: 400; font-size: 14px;"><span style="font-weight: 600; color: #444444;">Highlighted map sections</span> with different colors according to weather situations.</li>
+
+							<li style="color: #848484; font-weight: 400; font-size: 14px;">Added <span style="font-weight: 600; color: #444444;">3 different weather indicator</span> buttons.</li>
+							
+						</ul>
+					</div>
+
+					<div class="BeforeAndAfter">
+						<img src="images/BeforeAndAfter3.png">
+					</div>
+
+				</div>
+				
+			</div>
+
+			<h2 style="padding-top: 40px;"><span style="font-size: 16px; font-weight: 600; color: #ea4b3c; letter-spacing: 0.5px">FINAL PRODUCT</span><br>01. High Fidelity Prototype</h2>
+
+			<div class="highFidelity">
+
+				
+
+				<div id="wrapper">
+					<div class="high-fid-prototype-slideshow-captions-all">
+						<div class="prototype-slideshow-caption">
+							<p style="font-size: 14px; font-weight: 600; color: #848484;">User Flow 1</p>
+
+						</div>
+						<div class="prototype-slideshow-caption">
+							<p style="font-size: 14px; font-weight: 600; color: #848484;">User Flow 2</p>
+						</div>
+						<div class="prototype-slide-show-caption">
+							<p style="font-size: 14px; font-weight: 600; color: #848484;">User Flow 3</p>
+					
+						</div>
+				
+					</div>
+
+
+					<div id="main">
+						<div id="prototype-slideshow-frame">
+							<div class="prototype-slideshow-images">
+								<img src="images/mid_fid_prototype_flow1.png">
+								<img src="images/mid_fid_prototype_flow2.png">
+								<img src="images/mid_fid_prototype_flow3.png">
+					
+
+							</div>
+							<div class="prototype-arrow-next"></div>
+							<div class="prototype-arrow-prev"></div>
+
+						</div>
+
+					</div>
+				</div>
+				
+			</div> 
+
+
+			<h2 style="padding-top: 30px;">02. WeatherBug In Action</h2>
+			<div id="weatherbugInAction">
+					
+
+				<div class="display">
+					<video width="250px" loop="true" autoplay="autoplay" muted>
+						<source src="images/user_flow_1.mp4" type="video/mp4">
+					</video>
+				</div>
+
+				<div class="display">
+					<video width="250px" loop="true" autoplay="autoplay" muted>
+						<source src="images/user_flow_2.mp4" type="video/mp4">
+					</video>
+				</div>
+
+				<div class="display">
+					<video width="250px" loop="true" autoplay="autoplay" muted>
+						<source src="images/user_flow_3.mp4" type="video/mp4">
+					</video>
+				</div>
+
+			</div>
+
+			<h2 style="padding-top: 40px;"><span style="font-size: 16px; font-weight: 600; color: #ea4b3c; letter-spacing: 0.5px">RESULT</span><br>01. Screen Comparison</h2>
+			<div id="screenComparison">	
+
+				<div class="change">
+					<div class="changeDescription1">
+						<hr style="width: 15%; border-top: 2px solid #ea4b3c; text-align: left; margin-left: 0;">
+						<p style="font-weight: 600; margin-top: 0;">Homepage</p>
+
+						<ul>
+							<li style="color: #848484; font-weight: 400; font-size: 14px;">Improved visual hierarchy and consistency with <span style="font-weight: 600; color: #444444;">minimalist color palette design</span>.</li>
+							<li style="color: #848484; font-weight: 400; font-size: 14px;">Added a <span style="font-weight: 600; color: #444444;">navigation bar </span>with increased functions.</li>
+
+							<li style="color: #848484; font-weight: 400; font-size: 14px;">Incorporated various weather icons with colors to convey a <span style="font-weight: 600; color: #444444;">clean and modern style</span>.</li>
+							
+						</ul>
+					</div>
+
+					<div class="BeforeAndAfter">
+						<img src="images/screenComparison1.png">
+					</div>
+
+				</div>
+
+				<div class="change">
+
+
+					<div class="changeDescription2">
+						<hr style="width: 15%; border-top: 2px solid #ea4b3c; text-align: left; margin-left: 0;">
+						<p style="font-weight: 600; margin-top: 0;">Track Page</p>
+
+						<ul>
+
+							<li style="color: #848484; font-weight: 400; font-size: 14px;"><span style="font-weight: 600; color: #444444;">Major weather factors </span> are listed in a horizontal tap.</li>
+							<li style="color: #848484; font-weight: 400; font-size: 14px;">Colors and shapes are used to <span style="font-weight: 600; color: #444444;">clearly indication location</span> of stated weather status.</li>
+							<li style="color: #848484; font-weight: 400; font-size: 14px;"><span style="font-weight: 600; color: #444444;">Navigation bar</span> is included.</li>
+							<li style="color: #848484; font-weight: 400; font-size: 14px;"><span style="font-weight: 600; color: #444444;">Index form for weather at different locations</span>is attached.</li>
+							
+						</ul>
+					</div>
+
+					<div class="BeforeAndAfter">
+						<img src="images/screenComparison2.png">
+					</div>
+
+				</div>
+
+				<div class="change">
+					<div class="changeDescription3">
+						<hr style="width: 15%; border-top: 2px solid #ea4b3c; text-align: left; margin-left: 0;">
+						<p style="font-weight: 600; margin-top: 0;">Weather Details Page</p>
+
+						<ul>
+							<li style="color: #848484; font-weight: 400; font-size: 14px;">Weather conditions are listed as <span style="font-weight: 600; color: #444444;">texts and icons </span>in a more organized layout.</li>
+							<li style="color: #848484; font-weight: 400; font-size: 14px;">Graphs are used with <span style="font-weight: 600; color: #444444;">measurements and indicators </span>to represent key weather conditions.</li>
+
+							<li style="color: #848484; font-weight: 400; font-size: 14px;">Future weather forecasts are <span style="font-weight: 600; color: #444444;">now easily accessible</span>.</li>
+
+						</ul>
+					</div>
+
+					<div class="BeforeAndAfter">
+						<img src="images/screenComparison3.png">
+					</div>
+
+				</div>
+				
+			</div>
+
+
+			<h2 style="padding-top: 30px;">What I learned from this project</h2>
+			
+
+
+
+		</div>
+
+		
+<!-- 
+	<div id="footer">
+		<div id="sitemap">
+			<h3>Site Map</h3>
+			<p><a href="index.html">de Young Museum</a></p>
+			<p><a href="artist.html">Frida Kahlo</a></p>
+			<p><a href="art.html">Art</a></p>
+			<p><a href="album.html">Album</a></p>
+			
+		</div>
+
+		<div id="copyright">
+			<p>© 2020 Erica Gao.  All rights reserved.</p>
+		</div>
+
+		<div id="contact">
+			<p><a href="https://www.ericagao.com/">Website</a></p>
+			<p><a href="mailto:erica.gao1103@gmail.com">Email</a></p>
+		</div>
+
+		<div id="acknowledgement">
+			<h3>Acknowledge</h3>
+			<p>This is a student project designed and coded <br> by Erica Gao in 2020. Some resources are from <br> de Young Museum website and Google Arts & Culture.</p>
+		</div>
+			
+		
+	</div> -->
+
+</div>
+
+<div id="sidebar">
+				
+	<ul>
+	    <li><a href="index.html">jQuery (animated)</a></li>
+	    <li><a href="css.html">CSS (fixed)</a></li>
+	    <li><a href="reveal.html">CSS (reveal)</a></li>
+	</ul>
+		
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
